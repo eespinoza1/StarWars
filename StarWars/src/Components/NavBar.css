@@ -1,0 +1,12 @@
+.navBar{
+    display: flex;
+  
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.856);
+    border-radius: 15px;
+    padding: 20px;
+    border: solid rgb(221, 208, 208);
+    margin: auto;
+   
+    /* color: #FFE81F; */
+}
