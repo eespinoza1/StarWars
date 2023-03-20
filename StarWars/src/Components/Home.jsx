@@ -48,7 +48,7 @@ export default function Home({ allCharacters }) {
   return (
     <div className="home">
       <NavBar search={search} addList={addList} random={random} />
-      <h2>Atemption: Star Wars Battle</h2>
+      <h1 className="fonti">Atemption: Star Wars Battle</h1>
       <Cards characters={chars} />
       <div className="list">
         <List lista={listC} />

@@ -13,8 +13,8 @@ export default function Cardx({character}) {
         <CardMedia
           component="img"
           height="250"
-          image={character ? character.image : ""}
-          alt="green iguana"
+          image={character ? character.image : "https://brandemia.org/sites/default/files/inline/images/02-starwars-imagenes-brandemia-blog.jpg"}
+          alt="inicio"
          
         />
         <CardContent>
@@ -22,7 +22,7 @@ export default function Cardx({character}) {
      
           </Typography>
 
-        {character? character.id : ""}
+        {character? character.id : "You can choose a random character or search for a character, in the list you will find the available ones"}
           <Typography gutterBottom variant="h5" component="div">
            {character? character.name :""}
           </Typography>

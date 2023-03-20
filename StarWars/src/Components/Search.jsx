@@ -7,6 +7,7 @@ export default function Search({cardLocation, search}) {
   const [input, setInput]= useState("")
 
   const hadleChange = (e)=>{
+    e.preventDefault();  
 setInput(e.target.value)
 
   }
