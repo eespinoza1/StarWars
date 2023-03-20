@@ -7,16 +7,17 @@ import Button from "@mui/material/Button"
 
 
 
-export default function NavBar() {
+export default function NavBar({search, addList, random}) {
   return (
     <div className='navBar'>
 
-      <Search />
-      <Random />
-    <Button variant="contained" color="success" >All Characters</Button>
+      <Search search={search} cardLocation="left"/>
+      <Random random={random} cardLocation="left"/>
 
-      <Search />
-      <Random />
+    <Button variant="contained" color="success" onClick={addList} >All Characters</Button>
+
+    <Search search={search} cardLocation="right"/>
+      <Random random={random} cardLocation="right"/>
 
 
 </div>

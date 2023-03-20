@@ -1,13 +1,25 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Button from "@mui/material/Button"
 
 
 
-export default function Search() {
+export default function Search({cardLocation, search}) {
+  const [input, setInput]= useState("")
+
+  const hadleChange = (e)=>{
+setInput(e.target.value)
+
+  }
   return (
     <div>
-      <input></input>
-      <Button variant="contained" color="success">Search</Button>
+      <input
+      type="text"
+      name="username"
+      value={input.username}
+      onChange={(e)=>hadleChange(e)}
+      ></input>
+      <Button variant="contained" color="success" 
+      onClick={()=> search(input, cardLocation)}>Search</Button>
     </div>
   )
 }

@@ -5,24 +5,42 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
-export default function ActionAreaCard() {
+export default function Cardx({character}) {
+
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
         <CardMedia
           component="img"
           height="250"
-          image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMQYTyJtLtiCQ3Q3WnLPjk5WctMk6o-WyxWVEJTmFYBH7v5ltpGvunyVxmk3uBDmXamLM&usqp=CAU"
+          image={character ? character.image : ""}
           alt="green iguana"
+         
         />
         <CardContent>
+        <Typography variant="body2" color="text.secondary">
+          {character? character.id : ""}
+          </Typography>
+
+        {character? character.id : ""}
           <Typography gutterBottom variant="h5" component="div">
-            Dark Vader
+           {character? character.name :""}
           </Typography>
+
           <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+          {character? character.homeworld : ""}
           </Typography>
+
+          <Typography variant="body2" color="text.secondary">
+          {character? character.gender : ""}
+          </Typography>
+
+          <Typography variant="body2" color="text.secondary">
+          {character? character.species : ""}
+          </Typography>
+
+
+
         </CardContent>
       </CardActionArea>
     </Card>
