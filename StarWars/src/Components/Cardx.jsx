@@ -19,7 +19,7 @@ export default function Cardx({character}) {
         />
         <CardContent>
         <Typography variant="body2" color="text.secondary">
-          {character? character.id : ""}
+     
           </Typography>
 
         {character? character.id : ""}
