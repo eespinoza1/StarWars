@@ -14,7 +14,7 @@ export default function NavBar({search, addList, random}) {
       <Search search={search} cardLocation="left"/>
       <Random random={random} cardLocation="left"/>
 
-    <Button variant="contained" color="success" onClick={addList} >All Characters</Button>
+    <Button variant="contained" color="success" onClick={addList} >List Characters</Button>
 
     <Search search={search} cardLocation="right"/>
       <Random random={random} cardLocation="right"/>
